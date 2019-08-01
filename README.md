@@ -1,8 +1,9 @@
 # CNN-IM
-### Свёрточная нейронная сеть, которая классифицирует болен пациент заднедиафрагмальным инфарктом миокарда или нет с точностью 0.858.
+### Convolutional neural network that classifies people with myocardial infarction.
+### accuracy - 0.858, specificity - 0.9125, sensitivity - 0.8089.
 
 
-Архитектура нейронной сети:
+architecture neural network:
 
 
 [![enter image description here][2]][2]
@@ -11,10 +12,10 @@
 [2]: https://i.ibb.co/2MBjsWk/new.png
 
 
-define_data.py - выделение набора данных;
+define_data.py - get data from the server;
 
-preprocessing_data.py - предварительная обработка данных;
+preprocessing_data.py - preprocessing data;
 
-model.py - модель нейронной сети;
+model.py - neural network model;
 
-main.py - запуск.
+main.py - start.
