@@ -28,6 +28,7 @@ for i in range(169):
 
 	if pred > 0.5:
 		pred = 1
+
 	else:
 		pred = 0
 	print(pred)
