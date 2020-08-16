@@ -1,4 +1,4 @@
-# CNN-IM
+## CNN-IM
 ### Convolutional neural network that classifies people with myocardial infarction.
 ### accuracy - 0.858, specificity - 0.9125, sensitivity - 0.8089.
 
