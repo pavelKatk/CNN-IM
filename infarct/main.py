@@ -2,6 +2,7 @@ from define_data import definition_data
 from preprocessing_data import preprocessing
 import numpy as np
 
+
 definition_data()
 preprocessing()
 fi = open('result_data.txt')
@@ -24,6 +25,7 @@ for i in range(169):
 	k = k + 1
 	print(k)
 	pred = model(train_data, train_result, test_data)
+
 	if pred > 0.5:
 		pred = 1
 	else:
