@@ -4,7 +4,6 @@ from keras.layers import Dense
 from keras.layers import Dropout, Flatten
 from keras.layers import Conv1D, MaxPooling1D
 
-
 def model(train_data, train_result, test_data):
 	model = Sequential()
 	model.add(Conv1D(filters=15, kernel_size=3,activation='relu',input_shape=(600 , 3)))
