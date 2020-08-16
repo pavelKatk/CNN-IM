@@ -1,6 +1,5 @@
 from define_data import definition_data
 from preprocessing_data import preprocessing
-from model import model
 import numpy as np
 
 definition_data()
