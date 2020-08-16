@@ -13,6 +13,7 @@ fu = open('diagnosis.txt','r')
 result = [[int(x)] for x in fu.readlines()]
 result_predict = []
 k = 0
+
 for i in range(169):
 	test_data = np.array(data[i]).reshape(1, 600, 3)
 	train_data = data[:i]
