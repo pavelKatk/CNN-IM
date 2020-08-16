@@ -27,6 +27,7 @@ def preprocessing():
         out2 = ecg.ecg(signal=signal2, sampling_rate=1000., show = False)["templates"]
         ff = open('temp.txt','w')
         average_signal = []
+
         for x in range(len(out0[0])):
             average_signal.append(sum(out0[:,x])/len(out0[:,x]))
         for x in range(len(out1[0])):
@@ -35,8 +36,8 @@ def preprocessing():
        		average_signal.append(sum(out2[:,x])/len(out2[:,x]))
         for i in range(len(average_signal)):
             ff.write(str(average_signal[i])+ "\n")
+
         ff.close()
-        time = [i for i in range(1, 1801)]
         load_data = np.array(average_signal)
         patients.append(load_data)
     output = open('result_data.txt','w')
