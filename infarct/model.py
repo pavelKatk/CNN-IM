@@ -1,10 +1,8 @@
-import numpy as np 
-from keras.utils import plot_model
+import numpy as np
 from keras.models import Sequential
 from keras.layers import Dense
 from keras.layers import Dropout, Flatten
 from keras.layers import Conv1D, MaxPooling1D
-from keras.models import model_from_json
 
 def model(train_data, train_result, test_data):
 	model = Sequential()
